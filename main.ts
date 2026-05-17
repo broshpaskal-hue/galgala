@@ -51,6 +51,9 @@ OTHERSPRITE = sprites.create(img`
     8 8 8 8 8 8 6 6 7 7 7 5 7 7 6 6 
     8 8 8 8 8 8 6 6 7 7 7 7 5 7 6 6 
     `, SpriteKind.Player)
+OTHERSPRITE.setPosition(77, 111)
+controller.moveSprite(OTHERSPRITE, 100, 0)
+OTHERSPRITE.setStayInScreen(true)
 game.onUpdateInterval(1000, function () {
     ASTEROID = sprites.createProjectileFromSide(img`
         . . . . . . . . . c c 8 . . . . 
